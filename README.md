@@ -74,23 +74,6 @@ The process can be setup in the file config.ini to execute different user prefer
 [OPTIMIZATION][objective]: Define the variable to optimize. Choose among: flowTime_avg, cost_total, waiting_avg, time_workload_avg.
 [OPTIMIZATION][criteria]: Choose the optimization criteria. 'min' for minimization or 'max' for maximization.
 ```
-### Architecture
-
-The tool receive as input tree main elements:
- - XES Log Event
- - Resource Assignation Policy
- - Business KPI objective (Optimization) 
- 
-The resulted elements are:
- - Business Simulation Model (BPS)
- - Resource Configuration also know as the resources pools
- - KPIs of the executed BPS using Scylla
-    
-![General perspective Simod+Resources](images/Arquitectura_general_tesis-3.png)
-
-##### Pipe-Line flow architecture
-![Simod+Resources Architecture](images/Arquitectura_general_tesis-2.png)
-
 ### Project Folders and files
 Besides the modules showed in the previous Architecture image, the project folder have some important folders to take into account.
  - **Config.ini** file. Configuration file for the process.
